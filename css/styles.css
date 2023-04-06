@@ -1,0 +1,26 @@
+    body{
+        
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .fundo-verde{
+        width: 100%;
+        height: 100vh;
+        background-color:#eef9bf;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo{
+        width: 540px;
+        height: 63px;
+
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 65px;
+        color: #75B79E;
+
+        margin: 40px 0px;
+    }
