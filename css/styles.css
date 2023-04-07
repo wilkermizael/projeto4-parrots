@@ -29,6 +29,10 @@
     /* CSS DAS CARTAS---------------------------------------------*/
     .allCards{
         display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        
+        
         
 
     } 
@@ -37,6 +41,8 @@
         width: 200px;
         height: 250px;
         position: relative;
+        padding: 5px;
+        margin:5px 10px;
        
       }
 
@@ -74,8 +80,14 @@
       .back{
         transform: rotateY(0deg);
       }
-      .space{
-          margin-left:10px;
-          margin-right:10px;
+
+      ul{
+        display: flex;  
+        margin: 0px auto;
+   
       }
       /*-------------------------------------------------------------*/
+      img{
+          width: 100%;
+          height: auto;
+      }
