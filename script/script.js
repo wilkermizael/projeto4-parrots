@@ -84,11 +84,12 @@ function comparaCarta(a,b){
     contadorDeParesVirados++;
 
     contadorClick =0;
-    primeiraCarta =0;
-    segundaCarta =0;
+    primeiraCarta ='';
+    segundaCarta ='';
   }else if(asrc !== bsrc){
     a.classList.remove('back');
     b.classList.remove('back');
+    
     const aParent = a.parentNode.querySelector('.carta1')
     const bParent = b.parentNode.querySelector('.carta1')
 
