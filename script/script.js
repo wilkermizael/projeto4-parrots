@@ -114,14 +114,14 @@ function addCards(){
     for(let i = 0; i < num; i++){
       
    
-      listOfCards.innerHTML +=  `<ul onclick="clickTurnCard(this)" class="card">
+      listOfCards.innerHTML +=  `<ul data-test:"card" onclick="clickTurnCard(this)" class="card">
             
-                                  <li class="carta1 face ">
-                                    <img src="../imagens/back.png">
+                                  <li  class="carta1 face ">
+                                    <img data-test:"face-down-image" src="../imagens/back.png">
                                   </li>
 
                                   <li class="carta2 back-face face">
-                                    <img src="./imagens/${arrayParaSortear[i]}">
+                                    <img data-test:"face-up-image" src="./imagens/${arrayParaSortear[i]}">
                                   </li>
 
                                   </ul>`;

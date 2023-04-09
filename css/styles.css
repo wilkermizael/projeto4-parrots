@@ -1,6 +1,7 @@
     body{
         
         font-family: 'Roboto', sans-serif;
+        /*background-color:#eef9bf;*/
     }
     
     .fundo-verde{
@@ -29,6 +30,8 @@
     /* CSS DAS CARTAS---------------------------------------------*/
     .allCards{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         flex-wrap: wrap;
         
@@ -38,8 +41,8 @@
     } 
     
     .card {
-        width: 200px;
-        height: 250px;
+        width: 117px;
+        height: 146px;
         position: relative;
         padding: 5px;
         margin:5px 10px;
@@ -88,6 +91,16 @@
       }
       /*-------------------------------------------------------------*/
       img{
-          width: 100%;
-          height: auto;
+          width: 100px;
+          height: 100px;
       }
+     @media (max-width:415px){
+       .titulo, h1{
+         width: 100%;
+       }
+
+       .allCards{
+         display: flex;
+         flex-direction: column;
+       }
+     }
