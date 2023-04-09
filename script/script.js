@@ -117,11 +117,11 @@ function addCards(){
       listOfCards.innerHTML +=  `<ul  onclick="clickTurnCard(this)" class="card">
             
                                   <li data-test="card" class="carta1 face ">
-                                    <img data-test="face-down-image" src="../imagens/back.png">
+                                    <img data-test="face-up-image" src="../imagens/back.png">
                                   </li>
 
                                   <li data-test="card" class="carta2 back-face face">
-                                    <img data-test="face-up-image" src="./imagens/${arrayParaSortear[i]}">
+                                    <img data-test="face-down-image" src="./imagens/${arrayParaSortear[i]}">
                                   </li>
 
                                   </ul>`;
