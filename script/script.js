@@ -1,14 +1,3 @@
-/* PEDIR AO USUÁRIO A QUANTIDADE DE CARTAS QUE ELE DESEJA, DE ACORDO COM AS CONDIÇÕES*/
-let num = prompt("Por favor, insira a quantidade de cartas que deseja jogar:");
-solicitaQtddeCartas();
-
-function solicitaQtddeCartas(){
-while ( num % 2 !== 0 || num < 4 || num >14) {
-  num = prompt("Você não inseriu um número par. Por favor, insira um número par entre 4 e 14");
-}
-
-
-}
 //------------------------------------------------------------------------------------------------------------------------------------
 let carta1='';
 let carta2 ='';
@@ -17,6 +6,24 @@ let segundaCarta = '';
 let contadorJogadas = 0;
 let contadorClick = 0;
 let contadorDeParesVirados =0;
+
+
+
+/* PEDIR AO USUÁRIO A QUANTIDADE DE CARTAS QUE ELE DESEJA, DE ACORDO COM AS CONDIÇÕES*/
+
+
+let num = prompt("Por favor, insira a quantidade de cartas que deseja jogar:");
+solicitaQtddeCartas();
+
+function solicitaQtddeCartas(){
+  
+while ( num % 2 !== 0 || num < 4 || num >14) {
+num = prompt(" Por favor, insira um número par entre 4 e 14");
+}
+
+
+}
+
 
 
 const gifs=[
@@ -80,7 +87,7 @@ function clickTurnCard(carta){
 function comparaCarta(a,b){
   const asrc = a.querySelector('img').src;
   const bsrc = b.querySelector('img').src;
-  if(asrc === bsrc){
+  if(asrc.includes(bsrc)){
     contadorDeParesVirados++;
 
     contadorClick =0;
@@ -101,7 +108,8 @@ function comparaCarta(a,b){
     segundaCarta =0;
   }
   if(contadorDeParesVirados == num/2){
-    alert(`Você ganhou em ${contadorJogadas} jogadas!`)
+    alert(`Você ganhou em ${contadorJogadas} jogadas!`);
+    
   }
 }
 // Aplicar setTimeOut-----------------------------------------------------------------------------------
@@ -132,6 +140,4 @@ function addCards(){
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 addCards();
